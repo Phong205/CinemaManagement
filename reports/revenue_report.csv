@@ -1,0 +1,6 @@
+orderId,customerName,amount,status
+ORD-1001,Khach hang 1,150000,PENDING
+ORD-1002,Khach hang 2,300000,COMPLETED
+ORD-1003,Khach hang 3,450000,PENDING
+ORD-1004,Khach hang 4,600000,COMPLETED
+ORD-1005,Khach hang 5,750000,PENDING

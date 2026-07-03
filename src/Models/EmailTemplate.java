@@ -7,6 +7,7 @@ public class EmailTemplate {
     private String content;
     private int version;
 
+    // Getters và Setters
     public String getTemplateId() {
         return templateId;
     }
