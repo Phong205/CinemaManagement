@@ -6,13 +6,16 @@ public class Seat {
     private String seatNumber;
     private String seatType;
     private String status;
+    private double price;
 
-    public Seat(int seatId, int showtimeId, String seatNumber, String seatType, String status) {
+
+    public Seat(int seatId, int showtimeId, String seatNumber, String seatType, String status, double price) {
         this.seatId = seatId;
         this.showtimeId = showtimeId;
         this.seatNumber = seatNumber;
         this.seatType = seatType;
         this.status = status;
+        this.price = price;
     }
 
     public int getSeatId() {
@@ -55,6 +58,14 @@ public class Seat {
         this.status = status;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Seat{" +
@@ -63,6 +74,7 @@ public class Seat {
                 ", seatNumber='" + seatNumber + '\'' +
                 ", seatType='" + seatType + '\'' +
                 ", status='" + status + '\'' +
+                ", price=" + price +
                 '}';
     }
 }
