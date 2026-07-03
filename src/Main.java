@@ -1,5 +1,8 @@
+import HuyVe.HuyVeView;
 import MailSending.MailSendingDemo;
 import Reporting.ReportingDemo;
+import TinhGiaVe.TinhGiaVeView;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -15,9 +18,11 @@ public class Main {
                 System.out.println("==================================================");
                 System.out.println(" 1. Hệ thống gửi Gmail (MailSending)");
                 System.out.println(" 2. Thống kê và báo cáo (Reporting)");
+                System.out.println(" 3. Tính giá vé tự động");
+                System.out.println(" 4. Hủy vé");
                 System.out.println(" 0. Thoát");
                 System.out.println("==================================================");
-                System.out.print("Chọn chức năng (0-2): ");
+                System.out.print("Chọn chức năng (0-4): ");
 
                 String choice = reader.readLine().trim();
                 switch (choice) {
@@ -26,6 +31,12 @@ public class Main {
                         break;
                     case "2":
                         ReportingDemo.run(reader);
+                        break;
+                    case "3":
+                        TinhGiaVeView.run();
+                        break;
+                    case "4":
+                        HuyVeView.run();
                         break;
                     case "0":
                         System.out.println("\nTạm biệt!");

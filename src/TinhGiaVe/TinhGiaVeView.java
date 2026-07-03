@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class TinhGiaVeView {
-    public static void main(String[] args) {
+    public static void run() {
         boolean isRunning = true;
         while (isRunning) {
             System.out.println("Chọn chức năng đặt vé");
