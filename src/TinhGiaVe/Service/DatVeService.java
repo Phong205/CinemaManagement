@@ -17,9 +17,9 @@ public class DatVeService {
 
     public void datVe(int idUser) {
         List<Seat> listSeat = new ArrayList<Seat>();
-        listSeat.add(new Seat(1, 1, "A1", "Thường", "empty", 100000));
-        listSeat.add(new Seat(2, 1, "A2", "giá rẻ", "empty", 300000));
-        listSeat.add(new Seat(3, 1, "A3", "vip", "empty", 500000));
+        listSeat.add(new Seat(1, 1, "A1", "Thường", "empty", 100000, LocalDateTime.of(LocalDate.of(2026, 7, 10), LocalTime.of(0,0,0))));
+        listSeat.add(new Seat(2, 1, "A2", "giá rẻ", "empty", 300000, LocalDateTime.of(LocalDate.of(2026, 7, 10), LocalTime.of(0,0,0))));
+        listSeat.add(new Seat(3, 1, "A3", "vip", "empty", 500000, LocalDateTime.of(LocalDate.of(2026, 7, 10), LocalTime.of(0,0,0))));
 
         List<Food> listFood = new ArrayList<Food>();
         listFood.add(new Food(1,"bap rang", 20000));

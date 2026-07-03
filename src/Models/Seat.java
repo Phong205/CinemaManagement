@@ -1,5 +1,7 @@
 package Models;
 
+import java.time.LocalDateTime;
+
 public class Seat {
     private int seatId;
     private int showtimeId;
@@ -7,15 +9,17 @@ public class Seat {
     private String seatType;
     private String status;
     private double price;
+    private LocalDateTime expiry;
 
 
-    public Seat(int seatId, int showtimeId, String seatNumber, String seatType, String status, double price) {
+    public Seat(int seatId, int showtimeId, String seatNumber, String seatType, String status, double price, LocalDateTime expiry) {
         this.seatId = seatId;
         this.showtimeId = showtimeId;
         this.seatNumber = seatNumber;
         this.seatType = seatType;
         this.status = status;
         this.price = price;
+        this.expiry = expiry;
     }
 
     public int getSeatId() {
@@ -66,6 +70,14 @@ public class Seat {
         this.price = price;
     }
 
+    public LocalDateTime getExpiry() {
+        return expiry;
+    }
+
+    public void setExpiry(LocalDateTime expiry) {
+        this.expiry = expiry;
+    }
+
     @Override
     public String toString() {
         return "Seat{" +
@@ -75,6 +87,7 @@ public class Seat {
                 ", seatType='" + seatType + '\'' +
                 ", status='" + status + '\'' +
                 ", price=" + price +
+                ", expiry=" + expiry +
                 '}';
     }
 }
