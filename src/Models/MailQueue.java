@@ -1,24 +1,29 @@
 package Models;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 public class MailQueue {
     private String queueId;
-    private Queue<MailTask> mailTasks;
+    private final Queue<MailTask> queue = new LinkedList<>();
 
-    public String getQueueId() {
-        return queueId;
-    }
-
-    public void setQueueId(String queueId) {
+    public MailQueue(String queueId) {
         this.queueId = queueId;
     }
 
-    public Queue<MailTask> getMailTasks() {
-        return mailTasks;
+    public void enqueue(MailTask task) {
+        queue.add(task);
     }
 
-    public void setMailTasks(Queue<MailTask> mailTasks) {
-        this.mailTasks = mailTasks;
+    public MailTask dequeue() {
+        return queue.poll();
+    }
+
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+
+    public int size() {
+        return queue.size();
     }
 }

@@ -8,6 +8,15 @@ public class MailTask {
     private String status;
     private int retryCount;
 
+    public void incrementRetry() {
+        this.retryCount++;
+    }
+
+    public void updateStatus(String status) {
+        this.status = status;
+    }
+
+    // Getters và Setters
     public String getTaskId() {
         return taskId;
     }

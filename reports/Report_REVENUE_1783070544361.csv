@@ -1,0 +1,6 @@
+orderId,customerName,amount,status
+ORD-1001,Khách hàng 1,150000,PENDING
+ORD-1002,Khách hàng 2,300000,COMPLETED
+ORD-1003,Khách hàng 3,450000,PENDING
+ORD-1004,Khách hàng 4,600000,COMPLETED
+ORD-1005,Khách hàng 5,750000,PENDING
